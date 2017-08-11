@@ -1,12 +1,127 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
+	<head>
+		<meta charset="utf-8">
+		<title>HTML Academy: Седона</title>
+	</head>
+	<body>
+		<header class="main-header">
+			<nav class="main-nav">
+			 	<ul class="site-nav">
+			 		<a href="information" class="nav-link">
+						<li class="site-nav-info">Информация</li>
+					</a>
+					<a href="multimedia.html" class="nav-link">
+						<li class="site-nav-info">Фото и видео</li>
+					</a>
+					<a href="map.html" class="nav-link">
+						<li class="site-nav-info">Карта штата</li>
+					</a>
+					<a href="catalog.html" class="nav-link">
+						<li class="site-nav-info">Гостиницы</li>
+					</a>
+			 	</ul>
+			 </nav>	
+		</header>
+		
+		<main class="main-menu">
+			<h1 class="visible-hidder">Прекрасный город Седона</h1>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
+			<section class="intro">
+				<p class="intro-first_par">Welcome <span class="intro-decor_par">to the gorgeius</span></p>
+				<p class="intro-title">СЕДОНА</p>
+				<p class="intro-last_par"><q class="intro-quote">because the grand canyon lucks!</q></p>
+			</section>	
 
-  </body>
+			<section class="causes">
+				<b>Седона-небольшой городое в Аризоне, заслуживающий большего</b>
+				<h2 class="causes-title">Рассмотрим 5 причин по которым седона круче чем Гранд каньон!</h2>
+				<ul class="first_causes">
+					<li class="first_causes-content">
+						<h3>Настоящий городок</h3>
+						<p class="causes-number">№1</p>
+						<p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
+					</li>
+					<li calss="first_causes-img">
+						<img src="img/first_causes-image.png" alt="Седона во всей своей красе" width="500px" height="100px">
+					</li>
+				</ul>
+				<ul class="services">
+					<li class="services-home">
+						<h3 class="services-title">Жилье</h3>
+						<p> Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+					</li>
+					<li class="services-food">
+						<h3 class="services-title">Еда</h3>
+						<p> Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+					</li>
+					<li class="services-souvenirs">
+						<h3 class="services-title">Сувениры</h3>
+						<p> Не только китайского, но и местного производства</p>
+					</li>
+				</ul>
+				<ul class="second_causes">
+					<li calss="second_causes-img">
+						<img src="img/second_causes-image.png" alt="мост дьявола" width="500px" height="100px">
+					</li>
+					<li class="second_causes-content">
+						<h3>Там есть мост дьявола </h3>
+						<p class="causes-number">№2</p>
+						<p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+					</li>
+				</ul>
+				<ul class="other_causes">
+					<li>
+						<h3>Небольшая площадь</h3>
+						<p class="causes-number">№3</p>
+						<p>Все достопримечательности находятся очень близко</p>
+					</li>
+					<li>
+						<h3>Красивая дорога</h3>
+						<p class="causes-number">№4</p>
+						<p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+					</li>
+					<li>
+						<h3>Мало туристов</h3>
+						<p class="сauses-number">№5</p>
+						<p>Большенство едет в Гранд Каньон и толпится там</p>
+					</li>
+				</ul>
+			</section>
+
+			<section class="interestied">
+				<b>Заинтересовались?</b>
+				<h2>Укажите предпологаемые даты поездки, и мы покажем вам лучшее предложения гостиниц в Седоне</h2>
+				<a href="form.html">Поиск гостиницы в седоне</a>
+			</section>
+
+			<section class="modal modal-search">
+				<form class="search-form">
+					<p>Дата заезда:
+						<input class="date-arrival" type="date" name="date-arrival" placeholder="24 Апреля 2017">
+					</p>
+					<p>Дата выезда:
+						<input class="date-departure" type="date" name="date-departure" placeholder="4 июля 2017">
+					</p>
+					<button type="button">Найти</button>
+				</form>
+			</section>
+		</main>
+		
+		<footer class="main_footer">
+			<p class="main_footer-ht">#VISITSEDONA</p>
+			<ul class="social">
+				<li class="social_tv">twitter</li>
+				<li class="social_fb">facebook</li>
+				<li class="social_youtube">youtube</li>
+			</ul>
+			<div class="copyright">
+			<p>Website by
+				<a class="copyright-link" href="https://htmlacademy.ru">HTML academy</a>
+			</p>
+		</footer>
+
+
+		<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+	</body>
 </html>
