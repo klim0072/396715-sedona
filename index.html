@@ -5,29 +5,30 @@
 		<title>HTML Academy: Седона</title>
 	</head>
 	<body>
-		<header class="main-header">
-			<nav class="main-nav">
-			 	<ul class="site-nav">
-			 		<a href="information" class="nav-link">
-						<li class="site-nav-info">Информация</li>
-					</a>
-					<a href="multimedia.html" class="nav-link">
-						<li class="site-nav-info">Фото и видео</li>
-					</a>
-					<a href="map.html" class="nav-link">
-						<li class="site-nav-info">Карта штата</li>
-					</a>
-					<a href="catalog.html" class="nav-link">
-						<li class="site-nav-info">Гостиницы</li>
-					</a>
+		<header class="main_header">
+			<nav class="main_nav">
+			 	<ul class="site_nav">
+					<li class="site_nav-info">
+						<a href="information" class="nav_link">Информация</a>
+					</li>
+					<li class="site_nav-info">
+						<a href="multimedia.html" class="nav_link">Фото и видео</a>
+					</li>
+					<li class="site_nav-info">
+						<a href="map.html" class="nav_link">Карта штата</a>
+					</li>
+					<li class="site_nav-info">
+						<a href="catalog.html" class="nav_link">Гостиницы</a>
+					</li>
 			 	</ul>
 			 </nav>	
 		</header>
 		
-		<main class="main-menu">
+		<main class="main_menu">
 			<h1 class="visible-hidder">Прекрасный город Седона</h1>
 
 			<section class="intro">
+				<h2 class="visible-hidder">Добро пожаловать</h2>
 				<p class="intro-first_par">Welcome <span class="intro-decor_par">to the gorgeius</span></p>
 				<p class="intro-title">СЕДОНА</p>
 				<p class="intro-last_par"><q class="intro-quote">because the grand canyon lucks!</q></p>
@@ -42,8 +43,8 @@
 						<p class="causes-number">№1</p>
 						<p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
 					</li>
-					<li calss="first_causes-img">
-						<img src="img/first_causes-image.png" alt="Седона во всей своей красе" width="500px" height="100px">
+					<li class="first_causes-img">
+						<img src="img/first_causes-image.png" alt="Седона во всей своей красе" width="500" height="100">
 					</li>
 				</ul>
 				<ul class="services">
@@ -61,8 +62,8 @@
 					</li>
 				</ul>
 				<ul class="second_causes">
-					<li calss="second_causes-img">
-						<img src="img/second_causes-image.png" alt="мост дьявола" width="500px" height="100px">
+					<li class="second_causes-img">
+						<img src="img/second_causes-image.png" alt="мост дьявола" width="500" height="100">
 					</li>
 					<li class="second_causes-content">
 						<h3>Там есть мост дьявола </h3>
@@ -96,12 +97,13 @@
 			</section>
 
 			<section class="modal modal-search">
-				<form class="search-form">
+				<h2 class="visible-hidden">Найдем вам номер</h2>
+				<form class="search-form" method="post" action="#">
 					<p>Дата заезда:
-						<input class="date-arrival" type="date" name="date-arrival" placeholder="24 Апреля 2017">
+						<input class="date-arrival" type="date" name="date-arrival">
 					</p>
 					<p>Дата выезда:
-						<input class="date-departure" type="date" name="date-departure" placeholder="4 июля 2017">
+						<input class="date-departure" type="date" name="date-departure">
 					</p>
 					<button type="button">Найти</button>
 				</form>
@@ -119,9 +121,7 @@
 			<p>Website by
 				<a class="copyright-link" href="https://htmlacademy.ru">HTML academy</a>
 			</p>
+			</div>
 		</footer>
-
-
-		<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 	</body>
 </html>
